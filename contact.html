@@ -8,18 +8,18 @@
     <script src="JS/scripts.js"></script>
 </head>
 
-<body>
+<body id="contact">
     <div class="container">
 
         <header class="header">
 
-            <a class="link-title" href="/">Minimalistic Website</a>
+            <a class="link-title" href="index.html">Minimalistic Website</a>
 
         </header>
 
         <nav class="menu">
 
-            <a href="/">Home</a> &nbsp; &nbsp; &nbsp;
+            <a href="index.html">Home</a> &nbsp; &nbsp; &nbsp;
             <a href="about.html">About us</a> &nbsp; &nbsp; &nbsp;
             <a href="contact.html">Contact</a>
 
@@ -32,6 +32,47 @@
         </aside>
 
         <article class="main">
+            <h1 class="page-heading">Contact</h1>
+
+            <div id="form">
+
+                <form action="process.php">
+                    <p>
+                        <label for="name">
+                            Name:
+                        </label>
+                        <input type="text" name="name" placeholder="Your name">
+                    </p>
+
+                    <p>
+                        <label for="name">
+                            Email:
+                        </label>
+                        <input type="email" name="email">
+                    </p>
+
+                    <p>
+                        <label for="subject">
+                            Subject:
+                        </label>
+                        <input type="text" name="subject">
+                    </p>
+
+                    <p>
+                        <label for="subject">
+                            Message:
+                        </label>
+                        <textarea id="message" name="message" id="" cols="30" rows="10"></textarea>
+                    </p>
+
+                    <p>
+                        <input type="submit" name="submit" value="Send Message" id="submit">
+                    </p>
+
+                </form>
+
+            </div>
+
         </article>
 
         <footer>
